@@ -28,14 +28,13 @@ export default function Catalogo() {
   };
 
   return (
-    <section className="catalogo">
-      <h2 className="titulo">Catálogo</h2>
+    <div className="catalogo">
       {error && <p style={{ color: "red" }}>{error}</p>}
       <div className="grid">
         {productos.map(p => (
           <ProductCard key={p.id} producto={p} onAdd={agregarAlCarrito} />
         ))}
       </div>
-    </section>
+    </div>
   );
 }

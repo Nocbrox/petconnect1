@@ -30,7 +30,8 @@ export default function Header() {
       <nav className="nav">
         <ul className="nav-links">
           <li><Link to="/">Inicio</Link></li>
-          <li><Link to="/productos">Productos</Link></li>
+          <li><Link to="/catalogo">Catálogo</Link></li>
+          <li><Link to="/AboutUs">Sobre Nosotros</Link></li>
           <li><Link to="/chatbot">Chatbot</Link></li>
         </ul>
       </nav>

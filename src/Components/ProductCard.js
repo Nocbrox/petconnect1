@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function ProductCard({ producto, onAdd }) {
   return (
     <div className="card">
-      <img src={`/img/${producto.url}`} alt={producto.nombre} />
+      <img src={`./../assets/media/img/${producto.url}`} alt={`Imagen de ${producto.nombre}`} />
       <p>
         <strong>{producto.nombre}</strong><br />
         ${producto.precio}
