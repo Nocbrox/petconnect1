@@ -1,0 +1,91 @@
+/* Contenedor general del header */
+.header {
+    width: 100%;
+    background: #cfdcc5;
+    padding: 20px 40px 10px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+/* Limitar el ancho del contenido para que no se vea estirado en PC */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Alinear logo + texto */
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Tamaños del título */
+.site-title {
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 2px 2px 3px rgba(0,0,0,.4);
+}
+
+.site-slogan {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #f2f2f2;
+    text-shadow: 2px 2px 3px rgba(0,0,0,.4);
+}
+
+/* Usuario y carrito */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 1.2rem;
+}
+
+/* Navegación */
+.nav {
+    margin-top: 15px;
+    background: none;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.nav a {
+    color: #ffffff;
+    text-shadow: 2px 2px 3px rgba(0,0,0,.4);
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+/* RESPONSIVE → móvil */
+@media (max-width: 768px) {
+    .header-top {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .header-left {
+        flex-direction: column;
+    }
+
+    .nav ul {
+        gap: 25px;
+    }
+
+    .nav a {
+        font-size: 1.2rem;
+    }
+}

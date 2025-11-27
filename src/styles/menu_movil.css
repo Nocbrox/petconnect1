@@ -1,0 +1,107 @@
+/* Botón de menú hamburguesa (solo móvil) */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Ajustar posición botón modo oscuro en móvil para bajar por encima del menú */
+.modo-btn {
+    position: fixed;
+    top: 50px; /* bajar el botón para no superponerse al menú hamburguesa */
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: white;
+    z-index: 1001;
+
+}
+
+/* Menú móvil por defecto oculto */
+.nav {
+    transition: all .3s ease;
+}
+
+/* Normal en PC */
+@media (min-width: 769px) {
+    #mobile-menu {
+        display: block;
+    }
+
+    /* Mantener posición normal para botón modo oscuro en PC */
+    .modo-btn {
+        position: absolute;
+        top: 10px;
+        right: 30px;
+        font-size: 1.8em;
+        color: rgb(54, 108, 73);
+        z-index: auto;
+    }
+}
+
+/* Estilo de menú móvil */
+@media (max-width: 768px) {
+
+    .header-right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 15px;
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: white; /* si usas modo oscuro */
+    }
+
+    .modo-btn {
+        position: absolute;
+        top: 65px;
+        right: 20px;
+        font-size: 1.6rem;
+        z-index: 1000;
+    }
+
+    /* Ocultamos el nav por defecto */
+    #mobile-menu {
+        display: none;
+        width: 100%;
+        background: rgba(0,0,0,0.7);
+        backdrop-filter: blur(6px);
+        position: absolute;
+        top: 110px; /* ajustado para dejar espacio al botón modo oscuro */
+        left: 0;
+        padding: 15px 0;
+        z-index: 999;
+    }
+
+    #mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    #mobile-menu a {
+        font-size: 1.4rem;
+        color: #fff;
+    }
+
+    /* Mostrar el menú cuando tiene la clase activa */
+    #mobile-menu.active {
+        display: block;
+    }
+}
+

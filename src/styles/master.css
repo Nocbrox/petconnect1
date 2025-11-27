@@ -1,0 +1,1321 @@
+@import "menu_movil.css";
+/* === USER AVATAR STYLES === */
+.user-avatar {
+    width: 40px;
+    height: 40px;
+}
+
+/* --- HEADER MODERNO --- */
+
+.header {
+    width: 100%;
+    background: #97a98a;
+    padding: 20px 40px 10px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+body.dark-mode .header {
+    background-color: #2f3a2fd4; /* verde oscuro para fondo del header en modo oscuro */
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-header {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.title-group .site-title {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 4px;
+    font-weight: 600;
+    color: #2f4f4f;
+}
+
+.title-group .site-slogan {
+    margin: 0;
+    font-size: 1rem;
+    margin-top: -5px;
+    color: #445;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Login + Perfil */
+.user-box, .login-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s;
+}
+
+.user-box:hover,
+.login-box:hover {
+    border-bottom: 2px solid #3d5;
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.login-icon {
+    font-size: 1.4rem;
+}
+
+/* Carrito */
+.cart-box {
+    position: relative;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #333;
+}
+
+.cart-count {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    background: #4b7;
+    padding: 2px 6px;
+    font-size: 0.75rem;
+    color: #fff;
+    border-radius: 50%;
+}
+
+/* NAV */
+.nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 15px 0 0;
+    padding: 0;
+    gap: 40px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #2f3f3f;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s;
+}
+
+.nav ul li a:hover {
+    border-bottom: 2px solid #3d5;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .header-top {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+.user-avatar:hover {
+    transform: scale(1.1);
+}
+
+/* 🌙 Modo oscuro para avatar */
+body.dark-mode .user-avatar {
+    border-color: #e0e0e0;
+    box-shadow: 0 2px 4px rgba(255,255,255,0.1);
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.6;
+    color: #303030;
+    box-sizing: border-box;
+}
+img, picture, video, canvas, svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+button, input, select, textarea {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+.container, main, .contenedor-login, .login-wrapper, .card, article, .catalogo {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #6b995964;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.titulo{
+
+    display: block;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+    font-size: 2em;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 5px rgba(88, 53, 53, 0.4);
+}
+.eslogan{
+
+    display: block;
+    text-align: center;
+}
+
+nav.menu{
+    display: block;
+    margin-top: 20px;
+    background-color: rgb(88, 202, 130);
+    width: 100%;
+    box-shadow: 10px 10px 10px rgb(1, 5, 0, .4);
+}
+nav.menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+    overflow: hidden;
+}
+nav.menu ul li{
+    list-style: none;
+    flex: 1;
+    text-align: center;
+}
+nav.menu ul li a{
+    display: block;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: rgb(31, 44, 78);
+    transition: all .8s ease;
+}
+nav.menu ul li a:hover{
+    background-color: rgb(0, 0, 0, .2);
+    text-shadow: 2px 2px 2px rgb(0, 0,0, .2);
+}
+.catalogo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+article{
+    width: 30%;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+article img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+article h3, p{
+    font-size: 1em;
+    color: rgb(48, 48, 48);
+    text-align: center;
+}
+.botones{
+    display: flex;
+    justify-content: center;  /* center horizontally */
+    flex-direction: column;  /* stack buttons vertically */
+    gap: 15px;              /* space between buttons */
+    position: relative;
+    z-index: 1;
+}
+.botones a{
+    width: 100%;
+    text-decoration: none;
+    
+}
+.botones a button{
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding: 10px 15px;
+    border: 0px;
+    border-radius: 50px;
+    background-color: rgb(54, 108, 73);
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 2);
+    color: rgb(31, 44, 78);
+    font-weight: bolder;
+}
+
+.contenedor-login{
+    background-color: rgba(22, 131, 93, 0.2);
+     backdrop-filter: blur(10px);
+    width: 50%;
+    min-height: 300px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 1);
+}
+.titulo-admin{
+    text-align: center;
+    padding: 30px;
+    font-weight: bolder;
+    font-size: 3em;    
+}
+.campo{
+    display: block;
+    padding: 10px 15px;
+    border: 0px;
+    border-radius: 50px;
+    margin: 10px auto;
+    box-shadow: inset 5px 5px 5px rgba(31, 92, 59, 0.8);
+    text-align: center;
+    width: 200px;
+}
+.boton-login{
+    display: block;
+    padding: 10px 15px;
+    border: 0px;
+    border-radius: 50px;
+    margin: 10px auto;
+    box-shadow: inset 5px 5px 5px rgba(26, 65, 47, 0.8), 5px 5px 5px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    width: 200px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* separación entre carrito e iniciar sesión */
+    margin-right: 20px;
+}
+
+.cart-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.cart-icon {
+    width: 30px;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+.login-btn {
+    padding: 8px 18px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #3e8f41;
+}
+/* Removed background-image due to missing fondoadmin.jpg */
+.cuerpo{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tabla{
+   
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+.tabla tr td{
+    border: 1px solid black;
+}
+.tabla tr td input{
+    border: none;
+}
+.contenedor-tabla{
+    width: 100%;
+    height: 200px;
+    overflow: scroll;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url("../img/fondoclaro.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: rgba(255, 255, 255, 0.986);
+    text-align: center;
+    padding: 120px 20px;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 40px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgba(8, 8, 8, 1);
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px; /* Reduced padding for smaller size but not too small */
+    background-color: rgb(88, 202, 130);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgb(54, 108, 73);
+}
+
+/* Productos destacados */
+.destacados {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.destacados h3 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: rgb(48, 48, 48);
+}
+
+/* Dark mode product name in article h3 */
+body.dark-mode article h3 {
+    color: #ffffff !important;
+}
+
+body.dark-mode .catalogo .card p,
+body.dark-mode .catalogo .card p strong {
+    color: #f1f1f1;
+}
+
+body.dark-mode .catalogo .card p {
+    color: #e4e4e4;
+}
+
+body.dark-mode .card p,
+body.dark-mode .card p strong {
+    color: #f1f1f1 !important;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+}
+.card {
+    width: 250px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform .3s, box-shadow .3s;
+    padding: 20px;
+    text-align: center;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 1em;
+    color: rgb(48, 48, 48);
+}
+
+.card .botones a button {
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding: 10px 15px;
+    border: 30px;
+    border-radius: 50px;
+    background-color: rgb(54, 108, 73);
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 2);
+    color: rgb(31, 44, 78);
+    font-weight: bolder;
+}
+
+/* Chatbot Section */
+.chatbot {
+    background: linear-gradient(to right, #a8e6cf, #dcedc1);
+    border-radius: 10px;
+    margin: 50px 0;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.chatbot h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: rgb(48, 48, 48);
+}
+
+.chatbot p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+/* Sobre Section */
+.sobre {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.sobre h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: rgb(48, 48, 48);
+}
+
+.sobre p {
+    font-size: 1.1em;
+    max-width: 600px;
+    margin: 0 auto;
+    color: rgb(48, 48, 48);
+}
+
+/* Footer */
+footer {
+    background-color: rgb(88, 202, 130);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    clear: both;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+section, .card, .hero {
+  animation: fadeIn 0.8s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  nav.menu ul {
+    flex-direction: column;
+  }
+  .hero {
+    padding: 80px 15px;
+  }
+  .grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .card {
+    width: 90%;
+    max-width: 350px;
+  }
+}
+
+/* Contenedor del título y botón */
+.titulo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgb(54, 108, 73);
+}
+
+.modo-btn {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 1.8em;
+  cursor: pointer;
+  color: rgb(54, 108, 73);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.modo-btn:hover {
+  transform: scale(1.2);
+  color: black;
+}
+
+/* ===== estilos mínimos para carrito (botón) ===== */
+.modo-btn[title="Carrito"] {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 1.1em;
+  color: rgb(54,108,73);
+}
+
+/* 🌙 Modo oscuro */
+body.dark-mode {
+  background-color: #2542299e; /* ajuste final de fondo verde oscuro para modo oscuro */
+  color: #e0e0e0;
+}
+
+/* Dark mode styling for shopping cart container */
+body.dark-mode .contenedor-login {
+  background-color: #2c2c2c;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+  color: #e0e0e0;
+}
+
+/* Table styling in dark mode */
+body.dark-mode .contenedor-login table {
+  border-color: #555;
+  color: #e0e0e0;
+}
+
+body.dark-mode .contenedor-login table thead tr th {
+  border-bottom: 1px solid #666;
+  color: #ccc;
+}
+
+body.dark-mode .contenedor-login table tbody tr td {
+  border-bottom: 1px solid #666;
+  color: #ddd;
+}
+
+/* Buttons in dark mode */
+body.dark-mode .boton-peligro {
+  background-color: #d9534f;
+  color: #fff;
+  box-shadow: none;
+}
+
+body.dark-mode .boton-peligro:hover {
+  background-color: #c53e3a;
+}
+
+body.dark-mode .boton-cancelar {
+  background-color: #6c757d;
+  color: #fff;
+  box-shadow: none;
+}
+
+body.dark-mode .boton-cancelar:hover {
+  background-color: #5c636a;
+}
+
+body.dark-mode .btn {
+  background-color: #3a6e4f;
+  color: #fff;
+}
+
+body.dark-mode .btn:hover {
+  background-color: #2e5239;
+}
+
+body.dark-mode nav.menu {
+  background-color: #2c2c2c;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.6);
+}
+
+body.dark-mode nav.menu ul li a {
+  color: #e0e0e0;
+}
+
+body.dark-mode nav.menu ul li a:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+body.dark-mode .card {
+  background-color: #2c2c2c;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(255,255,255,0.05);
+}
+
+body.dark-mode .hero {
+  background-image: url("../img/fondooscuro.jpg");
+  background-blend-mode: overlay;
+  background-color: rgba(0,0,0,0.4);
+}
+
+body.dark-mode footer {
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+}
+
+body.dark-mode .btn {
+  background-color: #3a6e4f;
+}
+
+/* 🌙 Mejor contraste en modo oscuro */
+body.dark-mode,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode span,
+body.dark-mode a {
+  color: #f5f5f5 !important;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+/* Aumentar brillo de los títulos */
+body.dark-mode .titulo {
+  color: #ffffff;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.9);
+}
+
+/* Eslogan más visible */
+body.dark-mode .eslogan {
+  color: #dddddd;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+}
+
+/* Texto del Hero más claro */
+body.dark-mode .hero h2,
+body.dark-mode .hero p {
+  color: #fdfdfd;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.9);
+}
+
+/* Productos destacados */
+body.dark-mode .card p,
+body.dark-mode .card h3,
+body.dark-mode .destacados h3 {
+  color: #ffffff !important;
+}
+
+body.dark-mode .card p {
+  color: #ffffff !important;
+}
+
+/* Botones con contraste más alto */
+body.dark-mode .btn {
+  background-color: #62c47c;
+  color: #fff;
+  border: 2px solid #ffffff33;
+}
+
+body.dark-mode .btn:hover {
+  background-color: #4ba666;
+}
+
+/* Footer */
+body.dark-mode footer {
+  background-color: #1f1f1f;
+  color: #dcdcdc;
+}
+
+body.dark-mode footer a {
+  color: #9be8af;
+}
+
+body.dark-mode .hero {
+  filter: brightness(0.6);
+}
+
+/* 💡 Logo principal */
+.titulo {
+  color: #2f4f4f; /* tono oscuro para fondo claro */
+  font-weight: 900;
+  letter-spacing: 6px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: color 0.4s ease, text-shadow 0.4s ease;
+}
+
+/* 🌙 Cuando el modo oscuro está activo */
+body.dark-mode .titulo {
+  color: #a8ffce; /* verde menta claro */
+  text-shadow: 0 0 10px rgba(88, 202, 130, 0.8);
+}
+
+/* === BOTONES UNIFICADOS PARA TODO EL SITIO === */
+.catalogo .botones a button,
+.destacados .botones a button,
+.card .botones a button {
+  display: block;
+  margin: auto;
+  width: 90%;
+  max-width: 350px;
+  padding: 14px 25px;
+  border: none;
+  border-radius: 50px;
+  background-color: rgb(54, 108, 73);
+  color: white;
+  font-weight: bolder;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+
+.catalogo .botones a button:hover,
+.destacados .botones a button:hover,
+.card .botones a button:hover {
+  background-color: rgb(88, 202, 130);
+  transform: scale(1.05);
+}
+
+/* 🌙 Versión modo oscuro */
+body.dark-mode .catalogo .botones a button,
+body.dark-mode .destacados .botones a button,
+body.dark-mode .card .botones a button {
+  background-color: #62c47c;
+  color: #1b1b1b;
+}
+
+body.dark-mode .catalogo .botones a button:hover,
+body.dark-mode .destacados .botones a button:hover,
+body.dark-mode .card .botones a button:hover {
+  background-color: #4ba666;
+  color: #fff;
+}
+
+/* === CHATBOT STYLES === */
+.chatbot-seccion {
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+}
+
+.chatbot-box {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+}
+
+.chat-header {
+  background-color: rgb(88, 202, 130);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.chat-body {
+  padding: 15px;
+  flex-grow: 1;
+  overflow-y: auto;
+  max-height: 400px;
+}
+
+.bot-msg, .user-msg {
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 15px;
+  max-width: 80%;
+  line-height: 1.4;
+  animation: fadeIn 0.3s ease;
+}
+
+.bot-msg {
+  background-color: #e9f9f0;
+  color: #1f3b28;
+  align-self: flex-start;
+}
+
+.user-msg {
+  background-color: rgb(54, 108, 73);
+  color: white;
+  align-self: flex-end;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.options button {
+  background-color: rgb(88, 202, 130);
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.options button:hover {
+  background-color: rgb(54, 108, 73);
+}
+
+.chat-footer {
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.8em;
+  color: #666;
+}
+
+/* 🌙 Modo oscuro para chatbot */
+body.dark-mode .chatbot-box {
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+}
+
+body.dark-mode .bot-msg {
+  background-color: #3a3a3a;
+  color: #b0ffce;
+}
+
+body.dark-mode .user-msg {
+  background-color: #62c47c;
+  color: #1b1b1b;
+}
+
+body.dark-mode .chat-header {
+  background-color: #4ba666;
+}
+
+/* === Ajuste del catálogo para pantallas pequeñas === */
+@media (max-width: 1024px) {
+  .catalogo {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  article {
+    width: 45%;
+    height: auto;
+  }
+
+  article img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+  }
+}
+
+/* ======== RESPONSIVE PRODUCT CARDS ======== */
+@media (max-width: 768px) {
+
+  .catalogo {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  article {
+    width: 95% !important;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  article img {
+    width: 100%;
+    height: auto;
+    max-height: 220px;
+    object-fit: contain;
+  }
+
+  .botones {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .botones a button {
+    width: 90% !important;
+    font-size: 1em;
+    padding: 12px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  article img {
+    max-height: 180px;
+  }
+
+  /* Responsive fix for registration page container */
+  .contenedor-login {
+    width: 90% !important;
+    max-width: none !important;
+    margin: 20px auto !important;
+    padding: 15px !important;
+  }
+}
+
+/* ======== BOTÓN PRINCIPAL (VERDE) ======== */
+.btn-verde, 
+.catalogo .botones a button,
+.destacados .botones a button,
+.card .botones a button {
+  display: block;
+  margin: auto;
+  width: 60%;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 50px;
+  background-color: rgb(54, 108, 73); /* VERDE PRINCIPAL */
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.btn-verde:hover,
+.catalogo .botones a button:hover,
+.destacados .botones a button:hover {
+  background-color: rgb(88, 202, 130); /* VERDE BRILLANTE */
+  transform: scale(1.05);
+}
+
+/* ======== BOTÓN ALTERNATIVO (ACCIONES DIFERENTES) ======== */
+.btn-alt {
+  background-color: #4EB1F5; /* azul amigable */
+  color: white;
+}
+
+.btn-alt:hover {
+  background-color: #379ddc;
+}
+
+/* ======== BOTÓN PELIGRO (ELIMINAR) ======== */
+.btn-danger {
+  background-color: #d9534f;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #c53e3a;
+}
+
+/* === MENU RESPONSIVE === */
+.menu-header {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(88, 202, 130);
+  color: rgb(31, 44, 78);
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.8em;
+  cursor: pointer;
+  color: rgb(31, 44, 78);
+}
+
+@media (max-width: 768px) {
+  nav.menu ul {
+    display: none; /* ocultar menú por defecto */
+    flex-direction: column;
+    background-color: rgb(88, 202, 130);
+    width: 100%;
+  }
+
+  nav.menu ul.show {
+    display: flex; /* mostrar cuando se active */
+  }
+
+  .menu-header {
+    display: flex; /* mostrar encabezado en móvil */
+  }
+}
+/* ====== Contenedor general ====== */
+.contenedor-login {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* ====== Título ====== */
+.titulo-admin {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* ====== Imagen de perfil ====== */
+.perfil-foto img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #4EB1F5;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* ====== Inputs ====== */
+.campo {
+    width: 100%;
+    padding: 12px 14px;
+    margin: 8px 0;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    background: #fafafa;
+    transition: all .2s ease;
+    font-size: 15px;
+}
+
+.campo:focus {
+    border-color: #4EB1F5;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(78,177,245,.3);
+}
+
+/* ====== Botones ====== */
+.boton-login {
+    padding: 12px 20px;
+    border-radius: 8px;
+    background-color: #4EB1F5;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    transition: .2s ease;
+    display: inline-block;
+}
+
+.boton-login:hover {
+    background-color: #379ddc;
+}
+
+/* Variantes */
+.boton-cancelar {
+    background: #6c757d !important;
+}
+.boton-cancelar:hover{
+    background: #5c636a !important;
+}
+
+.boton-peligro {
+    background: #d9534f !important;
+}
+.boton-peligro:hover {
+    background: #c53e3a !important;
+}
+
+/* ====== Texto de perfil ====== */
+.perfil-info p {
+    font-size: 16px;
+    margin: 6px 0;
+    color: #333;
+}
+
+.perfil-info strong {
+    color: #111;
+}
+
+/* ====== Alertas ====== */
+.alert-info {
+    background: #ffe9e9;
+    border-left: 4px solid #d9534f;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+/* ===== LOGIN MODERNO ===== */
+.login-wrapper {
+    width: 100%;
+    max-width: 420px;
+    margin: 60px auto;
+    padding: 35px 30px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    text-align: center;
+    animation: fadeIn .6s ease;
+}
+
+/* Título */
+.login-wrapper h2 {
+    font-size: 2em;
+    margin-bottom: 25px;
+    font-weight: 700;
+    color: #2f4f4f;
+    letter-spacing: 1px;
+}
+
+/* Campos */
+.login-input {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border: 1px solid #cdd1d0;
+    border-radius: 10px;
+    background: #f8f8f8;
+    font-size: 15px;
+    transition: all .25s ease;
+}
+
+.login-input:focus {
+    background: #fff;
+    border-color: #58ca82;
+    box-shadow: 0 0 8px rgba(88,202,130,0.3);
+}
+
+/* Botón */
+.login-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #4ebf7d, #58ca82);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+    transition: transform .2s ease, background .3s ease;
+}
+
+.login-btn:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #3da16b, #4ebf7d);
+}
+
+/* Enlace de registro */
+.login-wrapper .registro-link {
+    margin-top: 15px;
+    display: inline-block;
+    font-size: 14px;
+    color: #2f6b4f;
+    text-decoration: none;
+}
+
+.login-wrapper .registro-link:hover {
+    text-decoration: underline;
+}
+
+/* 🌙 MODO OSCURO */
+body.dark-mode .login-wrapper {
+    background: #2c2c2c;
+    box-shadow: 0 8px 25px rgba(255,255,255,0.05);
+}
+
+body.dark-mode .login-wrapper h2 {
+    color: #a8ffce;
+}
+
+body.dark-mode .login-input {
+    background: #3a3a3a;
+    border-color: #555;
+    color: #eaeaea;
+}
+
+body.dark-mode .login-input:focus {
+    border-color: #62c47c;
+    box-shadow: 0 0 8px rgba(98,196,124,0.4);
+}
+
+body.dark-mode .login-btn {
+    background: linear-gradient(135deg, #62c47c, #4ba666);
+}
+
+body.dark-mode .registro-link {
+    color: #9be8af;
+}
