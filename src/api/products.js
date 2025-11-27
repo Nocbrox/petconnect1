@@ -1,4 +1,4 @@
-const BASE = "http://localhost/petconnect";
+const BASE = "https://petconnect.page.gd";
 
 export async function fetchDestacados() {
   try {

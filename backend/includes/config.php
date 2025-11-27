@@ -1,9 +1,9 @@
 <?php
 class Conexion{
-    private $server = "localhost";
-    private $userdb= "root";
-    private $passdb = "";
-    private $namedb = "petconnect";
+    private $server = "sql308.infinityfree.com";
+    private $userdb= "if0_40444443";
+    private $passdb = "Borrego132";
+    private $namedb = "if0_40444443_petconnect";
     private $charset = "utf8mb4";
 
     public $pdo;

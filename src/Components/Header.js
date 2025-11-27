@@ -9,7 +9,7 @@ export default function Header() {
           <img className="logo-header" src="/icono.jpeg" alt="Logo" />
           <div className="title-group">
             <h1 className="site-title">PetConnect</h1>
-            <p className="site-slogan">Cuida, consiente y conecta</p>
+            <p className="site-slogan">Mas que una tienda, un lazo con tu mejor amigo</p>
           </div>
         </div>
 
